@@ -1,23 +1,10 @@
 // Write your code here!
-const element = document.createElement("div");
-document.body.append(element);
-const ul = document.createElement("ul");
-
-for (let i = 0; i < 3; i++) {
-  const li = document.createElement("li");
-  li.textContent = (i + 1).toString();
-  ul.append(li);
-}
-
-element.append(ul);
-li.textContent = "Hi there!";
-const main = document.getElementById("main");
-main.innerHTML = "<h1>Poodles!</h1><h3>An Essay into the Pom-Pom as Aesthetic Reconfiguration of the Other from a post-Frankfurt School Appropriationist Perspective</h3><p><em>By: Byron Q. Poodle, Esq., BA.</em></p>";
-<main id="main">
-  <h1>Poodles!</h1>
-  <h3>
-    An Essay into the Pom-Pom as Aesthetic Reconfiguration of the Other from a
-    post-Frankfurt School Appropriationist Perspective
-  </h3>
-  <p><em>By: Byron Q. Poodle, Esq., BA.</em></p>
-</main>
+//To remove <main> node from the DOM
+const removeMain = document.querySelector("#main");
+removeMain.remove();
+//Has a newHeader variable that points to an <h1> node;
+const newHeader = document.createElement("h1");
+//Declare the 'newHeader' variable that points to the <h1> node has an id of 'victory'
+newHeader.id = "victory";
+// the 'newHeader' variable that points to the <h1> node with an id of 'victory' has the text "YOUR-NAME is the champion" (with your name in place of YOUR-NAME) inside it
+newHeader.innerHTML = "YOUR-NAME is the champion";
